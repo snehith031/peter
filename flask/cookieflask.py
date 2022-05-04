@@ -9,10 +9,10 @@ def cookie():
     res.set_cookie('foo', 'bar')
     return res
 
-import requests
-r=requests.get("https://newerp.kluniversity.in/index.php")
-for i in r.cookies:
- print( i.name +" --->" ,i.value)
+#import requests
+#r=requests.get("https://newerp.kluniversity.in/index.php")
+#for i in r.cookies:
+ #print( i.name +" --->" ,i.value)
 
 if __name__ == '__main__':
     app.run(debug=True)
